@@ -5,4 +5,10 @@ package mvp.stuff;
  * @date 05/02/2016
  **/
 public class Item {
+
+    private String name;
+
+    public Item(String name){
+        this.name = name;
+    }
 }
