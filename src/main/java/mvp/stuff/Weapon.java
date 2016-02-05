@@ -12,4 +12,15 @@ public class Weapon extends Item {
         super(name);
         this.damage = damage;
     }
+
+    public int getDamage(){
+        return damage;
+    }
+
+    @Override
+    public String toString() {
+        return "Weapon{" +
+                "damage=" + damage +
+                '}';
+    }
 }

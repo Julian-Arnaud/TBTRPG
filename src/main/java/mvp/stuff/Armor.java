@@ -12,4 +12,15 @@ public class Armor extends Item {
         super(name);
         this.protection = protection;
     }
+
+    public int getProtection(){
+        return protection;
+    }
+
+    @Override
+    public String toString() {
+        return "Armor{" +
+                "protection=" + protection +
+                '}';
+    }
 }
