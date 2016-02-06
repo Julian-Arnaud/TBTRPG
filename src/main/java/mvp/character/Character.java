@@ -1,7 +1,6 @@
 package mvp.character;
 
 import mvp.stuff.Armor;
-import mvp.stuff.Item;
 import mvp.stuff.Weapon;
 
 /**
@@ -10,13 +9,15 @@ import mvp.stuff.Weapon;
  **/
 public class Character {
 
+    private String name;
     private boolean isAlive;
     private int lifeMax;
     private int life;
     private Weapon weapon;
     private Armor armor;
 
-    public Character(int life, Weapon weapon, Armor armor){
+    public Character(String name, int life, Weapon weapon, Armor armor){
+        this.name = name;
         this.lifeMax = life;
         this.life = life;
         this.weapon = weapon;
@@ -61,6 +62,10 @@ public class Character {
 
     public int getLife(){
         return life;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Weapon getWeapon(){

@@ -17,10 +17,10 @@ public class Main {
         Armor chainmail = new Armor("Chainmail", 5);
         Armor clothes = new Armor("Clothes", 1);
 
-        Character knight = new Character(50, sword, chainmail);
-        Character rogue = new Character(20, axe, clothes);
+        Character knight = new Character("King's first knight", 50, sword, chainmail);
+        Character rogue = new Character("Stupid rogue", 20, axe, clothes);
 
-        while(true){
+        while(knight.getState()){
             knight.attack(rogue);
             if(rogue.getState()){
                 rogue.attack(knight);
