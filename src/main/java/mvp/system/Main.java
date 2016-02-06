@@ -17,8 +17,8 @@ public class Main {
         Armor chainmail = new Armor("Chainmail", 5);
         Armor clothes = new Armor("Clothes", 1);
 
-        Character knight = new Character("King's first knight", 50, sword, chainmail);
-        Character rogue = new Character("Stupid rogue", 20, axe, clothes);
+        Character knight = new Character("King's first knight", 4, sword, chainmail);
+        Character rogue = new Character("Stupid rogue", 18, axe, clothes);
 
         while(knight.getState()){
             knight.attack(rogue);

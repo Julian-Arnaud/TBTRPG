@@ -9,12 +9,29 @@ import mvp.stuff.Weapon;
  **/
 public class Character {
 
-    private String name;
-    private boolean isAlive;
-    private int lifeMax;
-    private int life;
-    private Weapon weapon;
-    private Armor armor;
+    /**
+     * Basic attributes of a character
+     */
+    private String name;        //name of the character
+    private boolean isAlive;    //alive or not
+    private int lifeMax;        //maximum life, will be upgradable later...
+    private int life;           //current amount of life
+
+    /**
+     * Basic stuff of the character
+     */
+    private Weapon weapon;      //the current equiped weapon
+    private Armor armor;        //the current equiped armor
+
+    /**
+     * Advanced attributes of a character
+     * From 3 to 18
+     * Influence the damage output for physical strike
+     */
+    private int strength;
+    private int defense;
+    private int magic;
+    private int spirit;
 
     public Character(String name, int life, Weapon weapon, Armor armor){
         this.name = name;
