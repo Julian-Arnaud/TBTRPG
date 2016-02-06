@@ -1,5 +1,7 @@
 package mvp.stuff;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 /**
@@ -8,4 +10,10 @@ import static org.junit.Assert.*;
  **/
 public class ArmorTest {
 
+    @Test
+    public void testArmor(){
+        Armor armor = new Armor("mail", 7);
+        assertEquals("mail", armor.getName());
+        assertEquals(armor.getProtection(), 7);
+    }
 }
