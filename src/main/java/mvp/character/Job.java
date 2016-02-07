@@ -4,7 +4,7 @@ package mvp.character;
  * @author Julian ARNAUD
  * @date 06/02/2016
  **/
-public class Stats {
+public abstract class Job {
     /**
      * Advanced attributes of a character
      * From 3 to 18
@@ -12,14 +12,24 @@ public class Stats {
      */
     private int strength;
     private int defense;
+    private int dexterity;
+    private int dodge;
     private int magic;
     private int spirit;
+    private int level;
+    private int exp;
 
-    public Stats(int strength, int defense, int magic, int spirit) {
-        this.strength = strength;
-        this.defense = defense;
-        this.magic = magic;
-        this.spirit = spirit;
+    public Job() {
+
+    }
+
+    public void initializeStats(){
+        this.level = 1;
+        this.exp = 0;
+    }
+
+    public void levelUp(){
+
     }
 
     public int getStrength() {
@@ -52,5 +62,37 @@ public class Stats {
 
     public void setSpirit(int spirit) {
         this.spirit = spirit;
+    }
+
+    public int getDodge() {
+        return dodge;
+    }
+
+    public void setDodge(int dodge) {
+        this.dodge = dodge;
+    }
+
+    public int getDexterity() {
+        return dexterity;
+    }
+
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel() {
+        this.level ++;
+    }
+
+    public int getExp() {
+        return exp;
+    }
+
+    public void setExp(int exp) {
+        this.exp += exp;
     }
 }
