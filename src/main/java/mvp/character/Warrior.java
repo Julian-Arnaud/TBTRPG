@@ -21,6 +21,6 @@ public class Warrior extends Job {
     }
 
     public void levelUp(){
-        
+
     }
 }

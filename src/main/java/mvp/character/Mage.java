@@ -6,8 +6,6 @@ package mvp.character;
  **/
 public class Mage extends Job {
 
-
-
     public Mage(){
         super();
         initializeStats();
