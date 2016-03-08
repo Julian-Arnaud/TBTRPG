@@ -12,6 +12,8 @@ public class Mage extends Job {
     }
 
     public void initializeStats(){
+
+        this.setInitialLevel();
         this.setStrength(7);
         this.setDefense(6);
         this.setDexterity(10);
@@ -21,6 +23,6 @@ public class Mage extends Job {
     }
 
     public void levelUp(){
-
+        this.nextLevel();
     }
 }

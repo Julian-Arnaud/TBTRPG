@@ -12,6 +12,8 @@ public class Warrior extends Job {
     }
 
     public void initializeStats(){
+
+        this.setInitialLevel();
         this.setStrength(13);
         this.setDefense(14);
         this.setDexterity(10);
@@ -21,6 +23,6 @@ public class Warrior extends Job {
     }
 
     public void levelUp(){
-
+        this.nextLevel();
     }
 }

@@ -23,15 +23,6 @@ public abstract class Job {
 
     }
 
-    public void initializeStats(){
-        this.level = 1;
-        this.exp = 0;
-    }
-
-    public void levelUp(){
-
-    }
-
     public int getStrength() {
         return strength;
     }
@@ -84,9 +75,11 @@ public abstract class Job {
         return level;
     }
 
-    public void setLevel() {
-        this.level ++;
+    public void setInitialLevel() {
+        this.level = 1;
     }
+
+    public void nextLevel(){ this.level++; }
 
     public int getExp() {
         return exp;

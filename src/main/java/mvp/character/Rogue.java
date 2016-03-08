@@ -12,6 +12,8 @@ public class Rogue extends Job {
     }
 
     public void initializeStats(){
+
+        this.setInitialLevel();
         this.setStrength(11);
         this.setDefense(8);
         this.setDexterity(14);
@@ -21,6 +23,6 @@ public class Rogue extends Job {
     }
 
     public void levelUp(){
-
+        this.nextLevel();
     }
 }
