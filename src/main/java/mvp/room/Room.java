@@ -1,7 +1,5 @@
 package mvp.room;
 
-import java.util.HashMap;
-
 /**
  * @author Julian ARNAUD
  * @date 08/03/2016
@@ -21,10 +19,6 @@ public class Room {
         this.id = id;
         this.location = location;
         this.description = "Room n°: " + id + ", location: (" + location.getX() + "," + location.getY() + ")";
-        northRoom = null;
-        eastRoom = null;
-        southRoom = null;
-        westRoom = null;
     }
 
     public String getDescription(){
