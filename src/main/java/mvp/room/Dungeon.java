@@ -61,4 +61,8 @@ public class Dungeon {
         roomList.add(room9);
         roomList.add(room10);
     }
+
+    public void setDone() {
+        this.done = true;
+    }
 }

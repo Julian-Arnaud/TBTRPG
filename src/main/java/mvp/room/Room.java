@@ -10,6 +10,8 @@ public class Room {
     private Location location;
     private String description;
 
+    private boolean cleared;
+
     private Room northRoom;
     private Room eastRoom;
     private Room southRoom;
@@ -17,6 +19,7 @@ public class Room {
 
     public Room(int id, Location location){
         this.id = id;
+        this.cleared = false;
         this.location = location;
         this.description = "Room n°: " + id + ", location: (" + location.getX() + "," + location.getY() + ")";
     }
