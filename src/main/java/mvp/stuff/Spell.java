@@ -10,8 +10,22 @@ public class Spell extends Item {
     private int power;
     private Element element;
 
-    public Spell(String name, Element element) {
+    public Spell(String name, Element element, int cost, int power) {
         super(name);
         this.element = element;
+        this.cost = cost;
+        this.power = power;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public Element getElement() {
+        return element;
     }
 }

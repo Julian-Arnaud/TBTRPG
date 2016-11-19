@@ -16,6 +16,7 @@ public class Character {
     private boolean isAlive;    //alive or not
     private int lifeMax;        //maximum life, will be upgradable later...
     private int life;           //current amount of life
+    private int initiative;     //welp, good to know the order
 
     /**
      * Basic stuff of the character
@@ -87,6 +88,10 @@ public class Character {
         return armor;
     }
 
+    public int getInitiative() {
+        return initiative;
+    }
+
     @Override
     public String toString() {
         return "Character{" +
@@ -96,5 +101,11 @@ public class Character {
                 ", weapon=" + weapon +
                 ", armor=" + armor +
                 '}';
+    }
+
+    public int compareTo(Character character) {
+        if (this.initiative > character.getInitiative()) return 1;
+        else if (this.initiative < character.getInitiative()) return -1;
+        else return 0;
     }
 }
